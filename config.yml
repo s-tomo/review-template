@@ -1,0 +1,39 @@
+# cite: https://github.com/kmuto/review/blob/master/doc/config.yml.sample
+review_version: 3.2
+bookname: sample
+language: ja
+booktitle: サンプル
+aut:
+  - name: s-tomo
+    file-as: s-tomo
+pbl: どこかの出版社
+prt: どこかの印刷所
+date: 2019-09-22
+history:
+  - - 2019-09-22
+rights: (C) 2019-2019 s-tomo
+description: 説明とか必要か？
+debug: true
+contentdir: doc
+# urnid: urn:uid:http://example.com/book-title/
+isbn: null
+htmlext: html
+stylesheet:
+  - ./style.css
+epubversion: 3
+htmlversion: 5
+toclevel: 3
+secnolevel: 3
+toc: true
+titlepage: true
+colophon: true
+direction: ltr
+epubmaker:
+  htmlext: xhtml
+texstyle:
+  - reviewmacro
+texdocumentclass:
+  - review-jsbook
+  - media=print,paper=b5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=10pt,baselineskip=15.4pt,line_length=40zw,number_of_lines=35,head_space=30mm,headsep=10mm,headheight=5mm,footskip=10mm
+pdfmaker:
+  colophon: true

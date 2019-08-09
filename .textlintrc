@@ -1,0 +1,13 @@
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-ja-technical-writing": true,
+    "preset-ja-spacing": true,
+    "prh": {
+      "rulePaths": ["./node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml"]
+    }
+  },
+  "plugins": ["review"]
+}

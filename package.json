@@ -1,0 +1,30 @@
+{
+  "name": "tbf7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "s-tomo <s.tomo.dev666@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "textlint doc/**/*.re",
+    "fix": "yarn lint --fix",
+    "rake": "docker run -it --rm -v $PWD:/usr/app -w /usr/app vvakame/review:3.2 rake",
+    "build:pdf": "yarn rake pdf",
+    "build:epub": "yarn rake epub"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "devDependencies": {
+    "@textlint/textlint-plugin-markdown": "^5.1.8",
+    "husky": "^3.0.3",
+    "textlint": "^11.3.1",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-plugin-review": "^0.3.3",
+    "textlint-rule-preset-ja-spacing": "^2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.3",
+    "textlint-rule-prh": "^5.2.1"
+  }
+}

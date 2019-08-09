@@ -1,0 +1,9 @@
+node_modules/
+webroot/
+*-text/
+*-pdf/
+
+*.pdf
+*.epub
+.DS_Store
+yarn-error.log
