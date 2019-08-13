@@ -4,7 +4,7 @@
 
 ## 初期設定
 
-vscode で開発する。
+vscode で執筆する。
 
 `Re:VIEW`拡張を入れる。
 
@@ -19,6 +19,14 @@ npm ライブラリのインストール。
 
 ```sh
 yarn
+```
+
+## 執筆
+
+`textlint`拡張が使い物にならないので、`npm script`で保存時 lint に対応。
+
+```sh
+yarn watch
 ```
 
 ## ビルド

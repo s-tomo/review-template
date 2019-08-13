@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "textlint doc/**/*.re",
     "fix": "yarn lint --fix",
+    "watch": "node scripts/watch.js",
     "rake": "docker run -it --rm -v $PWD:/usr/app -w /usr/app vvakame/review:3.2 rake",
     "build:pdf": "yarn rake pdf",
     "build:epub": "yarn rake epub"
